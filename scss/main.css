@@ -3,103 +3,95 @@ Project Name: Blank Template
 Client: Your Client
 Author: Your Name
 */
-
 /******************************************
 /* COLOURS
 /*******************************************/
-
 /* add a list of colours used in the project */
-
 /******************************************
 /* SENSIBLE DEFAULTS                   
 /*******************************************/
-
+/* line 17, main.scss */
 * {
-     box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
-
 /* add type styles here */
-
-
 /******************************************
 /* LAYOUT                   
 /*******************************************/
-
+/* line 32, main.scss */
 .site-container {
-	max-width: 800px;
-	margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.site-header {
-
-}
+/* line 40, main.scss */
 .site-header h1 {
-	color:red;
+  color: red;
 }
-.site-content {
 
+/* line 50, main.scss */
+.row {
+  border: 1px solid gray;
 }
+
+/* line 54, main.scss */
+.grid-half {
+  width: 50%;
+  float: left;
+  border: 1px solid gray;
+}
+
+/* line 60, main.scss */
+.grid-third {
+  width: 33.33%;
+  float: left;
+  border: 1px solid gray;
+}
+
+/* line 66, main.scss */
+.grid-two-third {
+  width: 66.66%;
+  float: left;
+  border: 1px solid gray;
+}
+
+/* line 72, main.scss */
 .site-footer {
-
+  border: 1px solid gray;
 }
-
-.row{
-	border: 1px solid gray;
-}
-
-.grid-half{
-	width: 50%;
-	float:left;
-	border: 1px solid gray;
-}
-
-.grid-third{
-	width: 33.33%;
-	float: left;
-	border: 1px solid gray;
-}
-
-.grid-two-third{
-	width: 66.66%;
-	float:left;
-	border: 1px solid gray;
-}
-
-.site-footer{
-	border: 1px solid gray;
-}
-
 
 /******************************************
 /* HELPER CLASSES
 /*******************************************/
-
 /* Clearfix */
+/* line 82, main.scss */
 .cf:before,
 .cf:after {
-     content: " ";
-     display: table;
+  content: " ";
+  display: table;
 }
+
+/* line 87, main.scss */
 .cf:after {
-     clear:both;
+  clear: both;
 }
 
+/* line 91, main.scss */
 .is-hidden {
-     display: none;
-}
-.is-visible {
-     display: block;
+  display: none;
 }
 
+/* line 94, main.scss */
+.is-visible {
+  display: block;
+}
 
 /******************************************
 /* ADDITIONAL STYLES                   
 /*******************************************/
 
-
-
-
+/*# sourceMappingURL=main.css.map */
