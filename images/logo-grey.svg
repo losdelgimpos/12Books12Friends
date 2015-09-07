@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="227.16049"
+   height="127.16049"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="logo-grey.svg">
+   sodipodi:docname="logo-white.svg">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -24,39 +24,6 @@
        inkscape:vp_z="744.09448 : 526.18109 : 1"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
        id="perspective2996" />
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3004">
-      <rect
-         style="fill:#f9f9f9"
-         id="rect3007"
-         width="190.75908"
-         height="94.719475"
-         x="279.53796"
-         y="417.70871" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3009">
-      <rect
-         style="fill:#f9f9f9"
-         id="rect3011"
-         width="190.75908"
-         height="94.719475"
-         x="279.53796"
-         y="417.70871" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3013">
-      <rect
-         style="fill:#f9f9f9"
-         id="rect3015"
-         width="190.75908"
-         height="94.719475"
-         x="279.53796"
-         y="417.70871" />
-    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -65,21 +32,31 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.03"
-     inkscape:cx="391.50018"
-     inkscape:cy="539.55316"
+     inkscape:zoom="0.81"
+     inkscape:cx="126.15891"
+     inkscape:cy="18.326884"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-global="false"
-     inkscape:window-width="1313"
-     inkscape:window-height="845"
+     inkscape:window-width="928"
+     inkscape:window-height="850"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
-       id="grid2994" />
+       id="grid2994"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-261.72839px"
+       originy="-520.98767px" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -89,49 +66,67 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-261.72839,-404.21402)">
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter;font-stretch:normal;font-variant:normal"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ececec;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter"
        x="281"
        y="452.36218"
        id="text2998"
        sodipodi:linespacing="125%"
-       clip-path="url(#clipPath3013)"><tspan
+       clip-path="none"><tspan
          sodipodi:role="line"
          id="tspan3000"
          x="281"
          y="452.36218">12 Books</tspan></text>
+    <rect
+       y="404.21402"
+       x="261.72839"
+       height="127.16049"
+       width="227.16049"
+       id="rect3009"
+       style="fill:none" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ececec;fill-opacity:1;stroke:none;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter"
        x="281.42847"
        y="506.82928"
        id="text3002"
        sodipodi:linespacing="125%"
-       clip-path="url(#clipPath3009)"><tspan
+       clip-path="none"><tspan
          sodipodi:role="line"
          id="tspan3004"
          x="281.42847"
          y="506.82928">12 Friends</tspan></text>
+    <rect
+       y="404.21402"
+       x="261.72839"
+       height="127.16049"
+       width="227.16049"
+       id="rect3005"
+       style="fill:none" />
     <rect
        id="rect3006"
        width="179.60512"
        height="4.9497476"
        x="285.31757"
        y="462.28156"
-       style="fill:#f9f9f9"
-       clip-path="url(#clipPath3004)" />
+       style="fill:#ececec"
+       clip-path="none" />
+    <rect
+       y="404.21402"
+       x="261.72839"
+       height="127.16049"
+       width="227.16049"
+       id="rect3001"
+       style="fill:none" />
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Box" />
 </svg>
