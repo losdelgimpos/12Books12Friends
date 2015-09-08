@@ -1,8 +1,6 @@
-/* 
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-*/
+
+@import "button";
+@import "normalize";
 
 /******************************************
 /* COLOURS
@@ -22,7 +20,9 @@ Author: Your Name
 /* TYPOGRAPHY
 /*******************************************/
 
-/* add type styles here */
+body{
+	font-family: sans-serif;
+}
 
 
 /******************************************
@@ -35,6 +35,8 @@ Author: Your Name
 }
 
 .site-header {
+	color: white;
+	background-color: darkblue;
 
 }
 .site-header h1 {
@@ -55,6 +57,7 @@ Author: Your Name
 	width: 50%;
 	float:left;
 	border: 1px solid gray;
+	text-align: center;
 }
 
 .grid-third{
@@ -73,6 +76,29 @@ Author: Your Name
 	border: 1px solid gray;
 }
 
+
+/******************************************
+/* HEADER AND NAV STYLING
+/*******************************************/
+
+nav ul{
+	text-align: right;
+}
+
+nav li {
+	font-size: 18px;
+	display: inline-block;
+	padding: 1em 1rem;
+}
+
+/******************************************
+/* HEADER AND NAV STYLING
+/*******************************************/
+
+
+img{
+	max-width: 100%;
+}
 
 /******************************************
 /* HELPER CLASSES
