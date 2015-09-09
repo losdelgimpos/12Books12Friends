@@ -367,10 +367,10 @@ th {
 img {
   max-width: 100%; }
 
-.clearfix:before, .site-header:before, section:before, .clearfix:after, .site-header:after, section:after {
+.clearfix:before, .site-header:before, section:before, .row:before, .book-row:before, .book-details:before, .clearfix:after, .site-header:after, section:after, .row:after, .book-row:after, .book-details:after {
   content: " ";
   display: table; }
-.clearfix:after, .site-header:after, section:after {
+.clearfix:after, .site-header:after, section:after, .row:after, .book-row:after, .book-details:after {
   clear: both; }
 
 /* GRID STRUCTURE */
@@ -385,7 +385,7 @@ img {
 .site-header h1 {
   color: red; }
 
-section {
+section, .row {
   border: 1px solid gray; }
 
 .grid-half {
@@ -415,11 +415,19 @@ nav li {
   display: inline-block;
   padding: 1em 1rem; }
 
-.clearfix:before, .site-header:before, section:before, .clearfix:after, .site-header:after, section:after {
-  content: " ";
-  display: table; }
-.clearfix:after, .site-header:after, section:after {
-  clear: both; }
+.show {
+  display: inline-block; }
+
+.hide {
+  display: none; }
+
+.book-small {
+  width: calc(100%/6);
+  padding: 0.25rem;
+  float: left; }
+
+.friend-picture img {
+  border-radius: 100%; }
 
 body {
   font-family: sans-serif; }

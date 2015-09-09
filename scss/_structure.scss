@@ -24,7 +24,7 @@
 
 }
 
-section{
+section, .row{
 	border: 1px solid gray;
 	// margin: 0 -$gutter;
 	@extend .clearfix;
@@ -69,14 +69,30 @@ nav li {
 	padding: 1em 1rem;
 }
 
-.clearfix{
-	&:before, &:after{
-		content: " "; 
-    	display: table;
-	}
-	&:after{
-		clear:both;
-	}
+.book-row{
+	@extend .clearfix;
+}
+
+.book-details{
+	@extend .clearfix;
+}
+
+.show{
+	display:inline-block;
+}
+
+.hide{
+	display:none;
+}
+
+.book-small{
+	width: calc(100%/6);
+	padding: 0.25rem;
+	float:left;
+}
+
+.friend-picture img{
+	border-radius:100%;
 }
 
 
