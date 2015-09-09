@@ -1,0 +1,20 @@
+/* SITE DEFAULTS */
+
+* {
+     box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+.clearfix{
+	&:before, &:after{
+		content: " "; 
+    	display: table;
+	}
+	&:after{
+		clear:both;
+	}
+}
