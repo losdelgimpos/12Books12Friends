@@ -1,0 +1,33 @@
+
+.book-row{
+	@extend .clearfix;
+}
+
+.book-details{
+	color: $cBookText;
+	background-color: $cBookBackground;
+	@extend .clearfix;
+
+	em{
+		color:#FFF;
+	}
+
+}
+
+.show{
+	display:inline-block;
+}
+
+.hide{
+	display:none;
+}
+
+.book-small{
+	width: calc(100%/6);
+	padding: 0.25rem;
+	float:left;
+}
+
+.friend-picture img{
+	border-radius:100%;
+}

@@ -3,96 +3,72 @@
 
 /* GRID STRUCTURE */
 
-.site-container {
+
+
+.container {
 	max-width: 800px;
 	margin: 0 auto;
-}
-
-.site-header {
-	color: white;
-	background-color: darkblue;
-	@extend .clearfix;
-
-}
-.site-header h1 {
-	color:red;
-}
-.site-content {
-
-}
-.site-footer {
-
-}
-
-section, .row{
-	border: 1px solid gray;
-	// margin: 0 -$gutter;
+	padding: 1.5rem 0rem;
 	@extend .clearfix;
 }
 
-// .col{
-// 	padding: $gutter;
-// 	float: left;
-// }
+header{
+	
+	background-color: #0111FF;
 
+	h1{
+		text-align: center;
+		color: #FFF;
+		margin: 0;
+		padding: 3rem;
+		font-family:'Amatic SC', cursive;
+		font-size: 3rem;
+	}
+	
+}
+
+section{
+	h2{
+		text-align: center;
+	}
+}
+
+.colored-section{
+		background-color: $cSection;
+	}
+
+img{
+	width:100%;
+}
+
+.icon-container{
+	padding: 0 20%;
+}
+
+
+h4{
+	text-align: center;
+}
 
 .grid-half{
 	width: 50%;
 	float:left;
-	border: 1px solid gray;
 	text-align: center;
+	padding: $gutter;
 }
 
 .grid-third{
 	width: 33.33%;
 	float: left;
-	border: 1px solid gray;
+	padding: $gutter;
 }
 
 .grid-two-third{
 	width: 66.66%;
 	float:left;
-	border: 1px solid gray;
+	padding: $gutter;
 }
 
-.site-footer{
-	border: 1px solid gray;
-}
 
-nav ul{
-	text-align: right;
-}
-
-nav li {
-	font-size: 18px;
-	display: inline-block;
-	padding: 1em 1rem;
-}
-
-.book-row{
-	@extend .clearfix;
-}
-
-.book-details{
-	@extend .clearfix;
-}
-
-.show{
-	display:inline-block;
-}
-
-.hide{
-	display:none;
-}
-
-.book-small{
-	width: calc(100%/6);
-	padding: 0.25rem;
-	float:left;
-}
-
-.friend-picture img{
-	border-radius:100%;
-}
 
 

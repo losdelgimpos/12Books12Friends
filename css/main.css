@@ -367,53 +367,75 @@ th {
 img {
   max-width: 100%; }
 
-.clearfix:before, .site-header:before, section:before, .row:before, .book-row:before, .book-details:before, .clearfix:after, .site-header:after, section:after, .row:after, .book-row:after, .book-details:after {
+.clearfix:before, .container:before, .book-row:before, .book-details:before, .clearfix:after, .container:after, .book-row:after, .book-details:after {
   content: " ";
   display: table; }
-.clearfix:after, .site-header:after, section:after, .row:after, .book-row:after, .book-details:after {
+.clearfix:after, .container:after, .book-row:after, .book-details:after {
   clear: both; }
 
 /* GRID STRUCTURE */
-.site-container {
+.container {
   max-width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 1.5rem 0rem; }
 
-.site-header {
-  color: white;
-  background-color: darkblue; }
+header {
+  background-color: #0111FF; }
+  header h1 {
+    text-align: center;
+    color: #FFF;
+    margin: 0;
+    padding: 3rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem; }
 
-.site-header h1 {
-  color: red; }
+section h2 {
+  text-align: center; }
 
-section, .row {
-  border: 1px solid gray; }
+.colored-section {
+  background-color: #3FB20A; }
+
+img {
+  width: 100%; }
+
+.icon-container {
+  padding: 0 20%; }
+
+h4 {
+  text-align: center; }
 
 .grid-half {
   width: 50%;
   float: left;
-  border: 1px solid gray;
-  text-align: center; }
+  text-align: center;
+  padding: 1rem; }
 
 .grid-third {
   width: 33.33%;
   float: left;
-  border: 1px solid gray; }
+  padding: 1rem; }
 
 .grid-two-third {
   width: 66.66%;
   float: left;
-  border: 1px solid gray; }
+  padding: 1rem; }
 
-.site-footer {
-  border: 1px solid gray; }
+body {
+  font-family: sans-serif; }
 
-nav ul {
-  text-align: right; }
-
-nav li {
-  font-size: 18px;
+.cta-button {
   display: inline-block;
-  padding: 1em 1rem; }
+  padding: 1em 1.5em;
+  border: 1px solid black;
+  border-radius: 1.5em;
+  color: white;
+  background-color: red; }
+
+.book-details {
+  color: #B3B3B3;
+  background-color: #222222; }
+  .book-details em {
+    color: #FFF; }
 
 .show {
   display: inline-block; }
@@ -428,16 +450,5 @@ nav li {
 
 .friend-picture img {
   border-radius: 100%; }
-
-body {
-  font-family: sans-serif; }
-
-.cta-button {
-  display: inline-block;
-  padding: 1em 1.5em;
-  border: 1px solid black;
-  border-radius: 1.5em;
-  color: white;
-  background-color: red; }
 
 /*# sourceMappingURL=main.css.map */

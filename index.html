@@ -7,68 +7,89 @@
     	<meta name="keywords" content="site, keywords, go, here">
     	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<link rel="stylesheet" href="css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
-		<div class="site-container">
-			<header class="site-header">
+	<body>		
+		<header>
+			<div class="container">
+				<h1>12 Books | 12 Friends</h1>
+			</div>
+		</header>
+		<section>
+			<div class="container">				
+				<div class="grid-half">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div class="grid-half">
+					<img src="images/books.jpg">
+				</div>
+			</div>
+		</section>
+		<section class="colored-section how-it-works">
+			<div class="container">
+				<h2>How it works</h2>
 				<div class="grid-third">
-					<img src="images/logo-grey.svg">
+					<div class="icon-container">
+						<img src="images/users6.svg">
+					</div>
+					<h4>Ask 12 friends to nominate</h4>
+					<em>Tell them to choose something personally tailored for you which they think you should read (and you haven't read before)</em>
 				</div>
-				<div class="grid-two-third">
-					<nav>
-						<ul>
-							<li>How it works</li>
-							<li>Collections</li>
-							<li>Login</li>
-							<li>Take part</li>
-						</ul>
-					</nav>
+				<div class="grid-third">
+					<div class="icon-container">
+						<img src="images/books30.svg">
+					</div>
+					<h4>Your friend selects a book</h4>
+					<em>Following 3 simple rules - your friend must have read the book, it must be a single volume and it cannot be a textbook</em>
 				</div>
-			</header>
-			<main>
-				<section>
-					<div class="grid-half">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p class="cta-button">Take part</p>
+				<div class="grid-third">
+					<div class="icon-container">
+						<img src="images/open161.svg">
 					</div>
-					<div class="grid-half">
-						<img src="images/books.jpg">
+					<h4>You read the book</h4>
+					<em>You've got 12 months to read the books - and don't forget to write a thank you note and tell your friend what you thought when you finish</em>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<h2>Explore Joe's Collection</h2>
+				<div class="book-row">
+					<div class="book-small" id="book1">
+						<img src="images/books/book1.jpg">
 					</div>
-				</section>
-				<section>
-					<p>How it works</p>
-				</section>
-				<section>
-					<div class="book-row">
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
-						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
-						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
-						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
-						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
-						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
-						</div>
+					<div class="book-small" id="book2">
+						<img src="images/books/book2.jpg">
 					</div>
-					<div class="book-details">
+					<div class="book-small" id="book3">
+						<img src="images/books/book3.jpg">
+					</div>
+					<div class="book-small" id="book4">
+						<img src="images/books/book4.jpg">
+					</div>
+					<div class="book-small" id="book5">
+						<img src="images/books/book5.jpg">
+					</div>
+					<div class="book-small" id="book6">
+						<img src="images/books/book6.jpeg">
+					</div>
+				</div>
+				<!-- Container for book details -->
+				<div class="book-details hide" id="bookContainer">
+				<!-- Start book 1 detailed info -->
+					<div id="book1details" class="hide">
 						<div class="grid-third">
-							<img src="images/book-placeholder.jpg">
+							<img src="images/books/book1.jpg">
 						</div>
 						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
 							<div class="row">
 								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -79,7 +100,11 @@
 							</div>
 							<div class="row">
 								<div class="grid-two-third">
-									<p>This friend is imaginery but awesome</p>
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
 								</div>
 								<div class="grid-third friend-picture">
 									<img src="images/person-placeholder.jpg">
@@ -87,33 +112,391 @@
 							</div>
 						</div>
 					</div>
-					<div class="book-row">
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
+					<!-- End book 1 detailed info -->
+					<!-- Start book 2 detailed info -->
+					<div id="book2details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book2.jpg">
 						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
 						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
+					</div>
+					<!-- End book 2 detailed info -->
+					<!-- Start book 3 detailed info -->
+					<div id="book3details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book3.jpg">
 						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
 						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
+					</div>
+					<!-- End book 3 detailed info -->
+					<!-- Start book 4 detailed info -->
+					<div id="book4details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book4.jpg">
 						</div>
-						<div class="book-small">
-							<img src="images/book-placeholder.jpg">
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
 						</div>
-					</div>	
-				</section>
-			</main>
-			<footer class="site-footer">
-				<p>&copy; CHANGE_THE_YEAR</p>
-			</footer>
-		</div><!-- .site-container -->
+					</div>
+					<!-- End book 4 detailed info -->
+					<!-- Start book 5 detailed info -->
+					<div id="book5details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book5.jpg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 5 detailed info -->
+					<!-- Start book 6 detailed info -->
+					<div id="book6details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book6.jpeg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 6 detailed info -->
+					<!-- Start book 7 detailed info -->
+					<div id="book7details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book7.jpg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 7 detailed info -->
+					<!-- Start book 8 detailed info -->
+					<div id="book8details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book8.jpg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 8 detailed info -->
+					<!-- Start book 9 detailed info -->
+					<div id="book9details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book9.jpeg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 9 detailed info -->
+					<!-- Start book 10 detailed info -->
+					<div id="book10details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book10.jpg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 10 detailed info -->
+					<!-- Start book 11 detailed info -->
+					<div id="book11details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book11.jpg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 11 detailed info -->
+					<!-- Start book 12 detailed info -->
+					<div id="book12details" class="hide">
+						<div class="grid-third">
+							<img src="images/books/book12.jpg">
+						</div>
+						<div class="grid-two-third">
+							<div>
+								<em>"What is the What" by Dave Eggers</em>
+							</div>
+							<div class="row">
+								<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+							</div>
+							<div class="row">
+								<div class="grid-two-third">
+									<em>Recommended by Mikey Lightfoot</em>
+									<blockquote>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</blockquote>
+								</div>
+								<div class="grid-third friend-picture">
+									<img src="images/person-placeholder.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End book 12 detailed info -->
+				<!-- End container for book details -->
+				</div>
+				
+				<div class="book-row">
+					<div class="book-small" id="book7">
+						<img src="images/books/book7.jpg">
+					</div>
+					<div class="book-small" id="book8">
+						<img src="images/books/book8.jpg">
+					</div>
+					<div class="book-small" id="book9">
+						<img src="images/books/book9.jpeg">
+					</div>
+					<div class="book-small" id="book10">
+						<img src="images/books/book10.jpg">
+					</div>
+					<div class="book-small" id="book11">
+						<img src="images/books/book11.jpg">
+					</div>
+					<div class="book-small" id="book12">
+						<img src="images/book-placeholder.jpg">
+					</div>
+				</div>
+			</div>	
+		</section>
+	<footer class="site-footer">
+
+	</footer>
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/books.js"></script>
+
 	</body>
 </html>
