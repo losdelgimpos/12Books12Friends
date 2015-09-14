@@ -392,6 +392,9 @@ header {
 section h2 {
   text-align: center; }
 
+p {
+  line-height: 200%; }
+
 .colored-section {
   background-color: #3FB20A; }
 
@@ -433,9 +436,17 @@ body {
 
 .book-details {
   color: #B3B3B3;
-  background-color: #222222; }
+  background-color: #222222;
+  position: relative; }
   .book-details em {
     color: #FFF; }
+
+#close {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .show {
   display: inline-block; }

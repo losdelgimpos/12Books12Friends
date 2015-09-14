@@ -6,11 +6,21 @@
 .book-details{
 	color: $cBookText;
 	background-color: $cBookBackground;
+	position: relative;
 	@extend .clearfix;
 
 	em{
 		color:#FFF;
 	}
+
+}
+
+#close{
+	color:white;
+	font-size:2rem;
+	position: absolute;
+	top: 0;
+	right: 0;
 
 }
 
@@ -31,3 +41,4 @@
 .friend-picture img{
 	border-radius:100%;
 }
+
