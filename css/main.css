@@ -380,20 +380,26 @@ img {
   padding: 1.5rem 0rem; }
 
 header {
-  background-color: #0111FF; }
+  height: 100vh;
+  background-image: url("../images/header-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
   header h1 {
-    text-align: center;
+    text-align: left;
     color: #FFF;
     margin: 0;
     padding: 3rem;
     font-family: 'Amatic SC', cursive;
-    font-size: 3rem; }
+    font-size: 5rem; }
+  header p {
+    color: #FFF;
+    padding: 3rem;
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 1.5; }
 
 section h2 {
   text-align: center; }
-
-p {
-  line-height: 200%; }
 
 .colored-section {
   background-color: #3FB20A; }

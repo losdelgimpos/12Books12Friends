@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$(book).removeClass('hide');
 		$(book).siblings().addClass('hide');
 	}
-
+	
 	// When any of the small books are clicked, then get the ID of the book clicked and apply openBook function
 	$('.book-small').on('click',function(){
 		openBook('#' + this.id +'details')
