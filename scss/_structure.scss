@@ -47,8 +47,13 @@ section{
 
 
 .colored-section{
-		background-color: $cSection;
+		color: #FFF;
+		background-color: $cDarkSection;
 	}
+
+.light-section{
+		background-color: $cLightSection;
+}
 
 img{
 	width:100%;
@@ -82,6 +87,9 @@ h4{
 	padding: $gutter;
 }
 
-
+footer{
+	background-color: $cFooter;
+	margin: 0;
+}
 
 
