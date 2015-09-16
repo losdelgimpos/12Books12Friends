@@ -374,6 +374,9 @@ img {
   clear: both; }
 
 /* GRID STRUCTURE */
+body {
+  background-color: #998262; }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -384,25 +387,21 @@ header {
   background-image: url("../images/header-background.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  header h1 {
-    text-align: left;
-    color: #FFF;
-    margin: 0;
-    padding: 3rem;
-    font-family: 'Amatic SC', cursive;
-    font-size: 5rem; }
+  header #logo {
+    text-align: center;
+    padding: 1rem;
+    width: 450px; }
   header p {
     color: #FFF;
-    padding: 3rem;
-    width: 50%;
-    font-size: 1.5rem;
-    line-height: 1.5; }
+    font-size: 1.25rem;
+    line-height: 1.25;
+    padding: 1rem; }
 
 section h2 {
   text-align: center; }
 
 .colored-section {
-  background-color: #3FB20A; }
+  background-color: #7BA687; }
 
 img {
   width: 100%; }
@@ -442,7 +441,7 @@ body {
 
 .book-details {
   color: #B3B3B3;
-  background-color: #222222;
+  background-color: #4C3E29;
   position: relative; }
   .book-details em {
     color: #FFF; }

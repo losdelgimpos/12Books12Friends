@@ -3,6 +3,9 @@
 
 /* GRID STRUCTURE */
 
+body{
+	background-color: #998262;
+}
 
 
 .container {
@@ -19,22 +22,19 @@ header{
 	background-repeat: no-repeat;
 	// background-color: #0111FF;
 
-	h1{
-		// float: left;
-		text-align: left;
-		color: #FFF;
-		margin: 0;
-		padding: 3rem;
-		font-family:'Amatic SC', cursive;
-		font-size: 5rem;
+	#logo{
+		text-align: center;
+		padding: 1rem;
+		width: 450px;
 	}
 
+
 	p{
-		color: #FFF;
-		padding: 3rem; 
-		width: 50%;
-		font-size: 1.5rem;
-		line-height: 1.5;
+	
+		color: #FFF; 
+		font-size: 1.25rem;
+		line-height: 1.25;
+		padding: 1rem;
 	}
 	
 }
