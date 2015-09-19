@@ -481,6 +481,13 @@ input {
   height: 2rem;
   padding: 0.5rem; }
 
+#submit {
+  border: 2px solid white;
+  color: #FFF;
+  border-radius: 1rem;
+  background-color: #591B07;
+  padding: 0px; }
+
 body {
   font-family: sans-serif; }
 
