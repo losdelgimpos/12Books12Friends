@@ -1,14 +1,17 @@
 /* VARIABLES */
 
-
+// Breakpoint for header text, logo and image
+$BreakPoint1: 650px;
+// Breakpoint for collapsing value proposition
+$BreakPoint2: 510px; 
 
 /* VARIABLES - COLORS */ 
 $cBody: #A63B19;
 $cDarkSection: #A63B19;
 $cLightSection: #FFF;
 $cBookBackground: #005943;
-$cBookText: #B3B3B3;
-$cFooter: #591B07;
+$cBookText: #FFF;
+$cFooter: #005943;
 
 
 // New colors

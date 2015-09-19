@@ -7,6 +7,8 @@
     	<meta name="keywords" content="site, keywords, go, here">
     	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<link rel="stylesheet" href="css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 
 
 	</head>
@@ -14,12 +16,8 @@
 		<header>
 			<div class="grid-half">
 				<img src="images/hipster-logo.svg" id="logo" alt="12 books | 12 friends logo">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h1>Let your friends choose what you read</h1>
+				<p>12 books | 12 friends started as a new year's resolution.</br>12 close friends choose a life-changing book for me to read within 12 months.  Now I invite you to take the challenge yourself.</p>
 			</div>
 		</header>
 		<section class="colored-section how-it-works">
@@ -27,24 +25,24 @@
 				<h2>How it works</h2>
 				<div class="grid-third">
 					<div class="icon-container">
-						<img src="images/users6.svg">
+						<img src="images/users6c.svg">
 					</div>
-					<h4>Ask 12 friends to nominate</h4>
-					<em>Tell them to choose something personally tailored for you which they think you should read (and you haven't read before)</em>
+					<h3>Ask 12 friends to nominate a book</h3>
+					<p>Carte blanche for them to choose whatever they think would be best for you</p>
 				</div>
 				<div class="grid-third">
 					<div class="icon-container">
-						<img src="images/books30.svg">
+						<img src="images/books30c.svg">
 					</div>
-					<h4>Your friend selects a book</h4>
-					<em>Following 3 simple rules - your friend must have read the book, it must be a single volume and it cannot be a textbook</em>
+					<h3>They choose a book which meets the rules</h3>
+					<p>No textbooks, single volumes only and they've got to have read it themselves.</p>
 				</div>
 				<div class="grid-third">
 					<div class="icon-container">
-						<img src="images/open161.svg">
+						<img src="images/open161c.svg">
 					</div>
-					<h4>You read the book</h4>
-					<em>You've got 12 months to read the books - and don't forget to write a thank you note and tell your friend what you thought when you finish</em>
+					<h3>You read the book within 12 months</h3>
+					<p>Enjoy the book, learn something new and don't forget to write a thank you note</p>
 				</div>
 			</div>
 		</section>
@@ -52,23 +50,27 @@
 			<div class="container">
 				<h2>Explore Joe's Collection</h2>
 				<div class="book-row">
-					<div class="book-small" id="book1">
-						<img src="images/books/book1.jpg">
+					<div class="mobile-book-row">
+						<div class="book-small" id="book1">
+							<img src="images/books/book1.jpg">
+						</div>
+						<div class="book-small" id="book2">
+							<img src="images/books/book2.jpg">
+						</div>
+						<div class="book-small" id="book3">
+							<img src="images/books/book3.jpg">
+						</div>
 					</div>
-					<div class="book-small" id="book2">
-						<img src="images/books/book2.jpg">
-					</div>
-					<div class="book-small" id="book3">
-						<img src="images/books/book3.jpg">
-					</div>
-					<div class="book-small" id="book4">
-						<img src="images/books/book4.jpg">
-					</div>
-					<div class="book-small" id="book5">
-						<img src="images/books/book5.jpg">
-					</div>
-					<div class="book-small" id="book6">
-						<img src="images/books/book6.jpeg">
+					<div class="mobile-book-row">
+						<div class="book-small" id="book4">
+							<img src="images/books/book4.jpg">
+						</div>
+						<div class="book-small" id="book5">
+							<img src="images/books/book5.jpg">
+						</div>
+						<div class="book-small" id="book6">
+							<img src="images/books/book6.jpeg">
+						</div>
 					</div>
 				</div>
 				
@@ -82,7 +84,7 @@
 							</div>
 							<div class="grid-two-third">
 								<div>
-									<em>"What is the What" by Dave Eggers</em>
+									<h3>"What is the What" by Dave Eggers</h3>
 								</div>
 								<div class="row">
 									<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -94,7 +96,7 @@
 								</div>
 								<div class="row">
 									<div class="grid-two-third">
-										<em>Recommended by Mikey Lightfoot</em>
+										<h3>Recommended by Mikey Lightfoot</h3>
 										<blockquote>
 											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 											tempor incididunt ut labore et dolore magna aliqua.
@@ -481,7 +483,20 @@
 				</div>
 			</div>	
 		</section>
-	<footer class="site-footer">
+	<footer class="colored-section">
+		<div class="container">
+			<form>
+				<div class="grid-third">
+					<label for="emailAddress">Subscribe to find out more about taking the challenge:</label>
+				</div>
+				<div class="grid-half">
+					<input type="text" id="emailAddress" placeholder="Enter your email">
+				</div>
+				<div class="grid-sixth">
+					<input type="submit" value="Submit"></input>
+				</div>
+			</form>
+		</div>
 	</footer>
 
 		<script src="js/jquery-2.1.4.js"></script>

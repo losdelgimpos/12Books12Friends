@@ -15,6 +15,17 @@ body{
 	@extend .clearfix;
 }
 
+h1, h2, h3 {
+	font-family: 'Bitter', serif;
+	text-align: center;
+}
+
+p, label {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;	
+}
+
+
 header{
 	height: 100vh;
 	background-image: url("../images/header-background.jpg");
@@ -29,26 +40,56 @@ header{
 	}
 
 
+	h1{
+		color: #FFF;
+		
+	}
+
 	p{
 	
 		color: #FFF; 
 		font-size: 1.25rem;
 		line-height: 1.25;
-		padding: 1rem;
+		padding: 1rem 3rem;
 	}
 	
+	// Switching text container to cover the full screen
+	@media only screen and (max-width: $BreakPoint1){		
+		.grid-half {
+		width: 100%;
+		float: none;
+		}
+		
+	}
+
 }
 
-section{
-	h2{
-		text-align: center;
+.how-it-works{
+
+	@media only screen and (max-width: $BreakPoint2){		
+		.grid-third {
+		width: 100%;
+		float: none;
+		}
+
+		.icon-container{
+			padding: 0;
+			text-align: center;
+		}
+
+		img{
+			width:40%;
+			text-align: center;
+		}
+
 	}
+
 }
 
 
 .colored-section{
 		color: #FFF;
-		background-color: $cDarkSection;
+		// background-color: $cDarkSection;
 	}
 
 .light-section{
@@ -64,9 +105,6 @@ img{
 }
 
 
-h4{
-	text-align: center;
-}
 
 .grid-half{
 	width: 50%;
@@ -87,9 +125,48 @@ h4{
 	padding: $gutter;
 }
 
-footer{
-	background-color: $cFooter;
-	margin: 0;
+.grid-quarter{
+	width: 25%;
+	float:left;
+	text-align: center;
+	padding: $gutter;
 }
 
+.grid-sixth{
+	width: 16.67%;
+	float:left;
+	padding: $gutter;
+}
+
+
+.form-field, .clear{
+		display: inline-block;
+	}
+
+footer{
+	margin: 0;
+	background-color: $cFooter;
+
+	@media only screen and (max-width: $BreakPoint1){
+		.grid-third{
+			width: 100%;
+		}
+
+		.grid-half{
+			width: 66.66%;
+		}
+
+		.grid-sixth{
+			width: 33.33%;
+		}		
+	}
+
+}
+
+input{
+	color: #000;
+	width: 100%;
+	height: 2rem;
+	padding: 0.5rem;
+}
 

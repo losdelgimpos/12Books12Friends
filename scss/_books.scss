@@ -9,9 +9,29 @@
 	position: relative;
 	@extend .clearfix;
 
-	em{
-		color:#FFF;
+
+	@media only screen and (max-width:$BreakPoint2){
+		.grid-third{
+			width:100%;	
+			text-align: center;
+
+			img{
+				width:40%;
+			}
+
+		}
+
+		.grid-two-third{
+			width:100%;
+			text-align: center;
+
+			img{
+				width:60%
+			}
+
+		}
 	}
+
 
 }
 
@@ -37,6 +57,8 @@
 	width: calc(100%/6);
 	padding: 0.25rem;
 	float:left;
+
+
 }
 
 .friend-picture img{

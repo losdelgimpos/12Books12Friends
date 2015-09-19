@@ -382,6 +382,14 @@ body {
   margin: 0 auto;
   padding: 1.5rem 0rem; }
 
+h1, h2, h3 {
+  font-family: 'Bitter', serif;
+  text-align: center; }
+
+p, label {
+  font-family: 'Raleway', sans-serif;
+  text-align: center; }
+
 header {
   height: 100vh;
   background-image: url("../images/header-background.jpg");
@@ -391,18 +399,31 @@ header {
     text-align: center;
     padding: 1rem;
     width: 450px; }
+  header h1 {
+    color: #FFF; }
   header p {
     color: #FFF;
     font-size: 1.25rem;
     line-height: 1.25;
-    padding: 1rem; }
+    padding: 1rem 3rem; }
+  @media only screen and (max-width: 650px) {
+    header .grid-half {
+      width: 100%;
+      float: none; } }
 
-section h2 {
-  text-align: center; }
+@media only screen and (max-width: 510px) {
+  .how-it-works .grid-third {
+    width: 100%;
+    float: none; }
+  .how-it-works .icon-container {
+    padding: 0;
+    text-align: center; }
+  .how-it-works img {
+    width: 40%;
+    text-align: center; } }
 
 .colored-section {
-  color: #FFF;
-  background-color: #A63B19; }
+  color: #FFF; }
 
 .light-section {
   background-color: #FFF; }
@@ -412,9 +433,6 @@ img {
 
 .icon-container {
   padding: 0 20%; }
-
-h4 {
-  text-align: center; }
 
 .grid-half {
   width: 50%;
@@ -432,9 +450,36 @@ h4 {
   float: left;
   padding: 1rem; }
 
+.grid-quarter {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 1rem; }
+
+.grid-sixth {
+  width: 16.67%;
+  float: left;
+  padding: 1rem; }
+
+.form-field, .clear {
+  display: inline-block; }
+
 footer {
-  background-color: #591B07;
-  margin: 0; }
+  margin: 0;
+  background-color: #005943; }
+  @media only screen and (max-width: 650px) {
+    footer .grid-third {
+      width: 100%; }
+    footer .grid-half {
+      width: 66.66%; }
+    footer .grid-sixth {
+      width: 33.33%; } }
+
+input {
+  color: #000;
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem; }
 
 body {
   font-family: sans-serif; }
@@ -448,11 +493,20 @@ body {
   background-color: red; }
 
 .book-details {
-  color: #B3B3B3;
+  color: #FFF;
   background-color: #005943;
   position: relative; }
-  .book-details em {
-    color: #FFF; }
+  @media only screen and (max-width: 510px) {
+    .book-details .grid-third {
+      width: 100%;
+      text-align: center; }
+      .book-details .grid-third img {
+        width: 40%; }
+    .book-details .grid-two-third {
+      width: 100%;
+      text-align: center; }
+      .book-details .grid-two-third img {
+        width: 60%; } }
 
 #close {
   width: 2.5rem;
