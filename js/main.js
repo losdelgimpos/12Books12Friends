@@ -33,7 +33,21 @@ $(document).ready(function(){
 	// When any of the small books are clicked, then get the ID of the book clicked and apply openBook function
 	$('.book-small').on('click',function(){	
 		openBook('#' + this.id +'details');
-		$('#bookContainer').slideDown();	
+		$('#bookContainer').slideDown();
+		// Get data from Open Library API from
+		var bookISBN = $(this).data("id");
+		var openLibAPI = "https://www.googleapis.com/books/v1/volumes/m5vIVN7LjtgC";
+		$.ajax({
+			url: openLibAPI,
+			crossDomain: true,
+			datatype: 'json',
+			success: function(data){
+				var book = data.volumeInfo;
+				console.log(book.title);
+				// fill into inner HTML
+
+			}
+		})	
 	})
 
 	// Provide ability to close the explorer
