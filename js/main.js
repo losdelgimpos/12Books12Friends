@@ -5,9 +5,11 @@ $(document).ready(function(){
 
 	// Create a function to replaceCover of book based on the ISBN and book ID
 	function replaceCover(id,index){
-		var imageLink = '<img src="http://covers.openlibrary.org/b/ISBN/' + id +'-M.jpg">';
-		var imageLocation = "#book"+index+" .book-small-image";
-		$(imageLocation).replaceWith(imageLink);
+		var imageLink = '<img src="http://covers.openlibrary.org/b/ISBN/' + id +'-L.jpg">';
+		var imageLocationA = "#book"+index+" .book-small-image";
+		$(imageLocationA).replaceWith(imageLink);
+		var imageLocationB = "#book"+index+"details .book-large-image";
+		$(imageLocationB).	replaceWith(imageLink);
 	}
 
 	// Define the book collection array to house ISBNs
