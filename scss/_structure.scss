@@ -59,6 +59,8 @@ header{
 		width: 100%;
 		float: none;
 		}
+
+		p{display: none;}
 		
 	}
 
@@ -104,7 +106,9 @@ img{
 	padding: 0 20%;
 }
 
-
+.row{
+	@extend .clearfix;
+	}
 
 .grid-half{
 	width: 50%;
