@@ -21,23 +21,23 @@ $(document).ready(function(){
 		replaceCover(googleID,i+1);
 	})
 
-	// Defining function to openBook when book is clicked
-	function openBook(book){	
-		$(book).removeClass('hide');
-		$(book).siblings().addClass('hide');
-	}
 	
-	// When any of the small books are clicked, then get the ID of the book clicked and apply openBook function
+	// When small book is opened, slide down 
 	$('.book-small').on('click',function(){	
-		openBook('#' + this.id +'details');
-		$('#bookContainer').slideDown();
 		// Get data from Open Library API from
-		var bookISBN = $(this).data("id");
-		var openLibAPI = "https://www.googleapis.com/books/v1/volumes/m5vIVN7LjtgC";
-		$.get(openLibAPI, function(data){
-				var book = data.volumeInfo;
-				console.log(book.title);
-				// fill into inner HTML
+		var googleID = $(this).data("googleid");
+		var googleAPI = "https://www.googleapis.com/books/v1/volumes/" + googleID + "?key=AIzaSyA6GBzUG7EBEJy91eoBPjCkFX3DqlP27P4";
+		$.get(googleAPI, function(data){
+			var book = data.volumeInfo;
+			$('.book-large-image').html('<img src="'+ book.imageLinks.large+ '">');
+			$('#bookTitle').html(book.title);
+			// var authors = book.author;
+			// var author = authors[0];
+			// console.log(author);
+			// $('#bookAuthor').html(book.author[0]);
+			$('#bookAbstract').html(book.description);
+			console.log(book);
+		$('#bookContainer').slideDown();
 		})	
 	})
 
