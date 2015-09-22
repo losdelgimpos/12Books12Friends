@@ -3,25 +3,22 @@
 
 $(document).ready(function(){
 
-	// Create a function to replaceCover of book based on the ISBN and book ID
+	// Create a function to replaceCover of book based on the googleID
 	function replaceCover(id,index){
-		var imageLink = '<img src="http://covers.openlibrary.org/b/ISBN/' + id +'-L.jpg">';
-		var imageLocationA = "#book"+index+" .book-small-image";
-		$(imageLocationA).replaceWith(imageLink);
-		var imageLocationB = "#book"+index+"details .book-large-image";
-		$(imageLocationB).	replaceWith(imageLink);
+		var imageLocation = "#book"+index+" .book-small-image";
+		var googleAPI = "https://www.googleapis.com/books/v1/volumes/" + id + "?key=AIzaSyA6GBzUG7EBEJy91eoBPjCkFX3DqlP27P4";
+		$.get(googleAPI, function(data){
+				var book = data.volumeInfo;
+				$(imageLocation).replaceWith('<img src="'+ book.imageLinks.smallThumbnail+ '">');
+		})	
 	}
 
-	// Define the book collection array to house ISBNs
-	var bookCollection = [];
-
 	// Loop through all divs with class book-small
-	// For each book-small class, take the ISBN from data-id
-	// Use this ISBN to call the replaceCover function
+	// For each book-small class, take the google ID from data attribute
+	// Use this googleID to replace cover using function able
 	$.each($(".book-small"), function(i,e){
-		bookCollection.push($(e).data("id"));
-		var bookISBN = $(e).data("id");
-		replaceCover(bookISBN,i+1);
+		var googleID = $(e).data("googleid");
+		replaceCover(googleID,i+1);
 	})
 
 	// Defining function to openBook when book is clicked
@@ -37,16 +34,10 @@ $(document).ready(function(){
 		// Get data from Open Library API from
 		var bookISBN = $(this).data("id");
 		var openLibAPI = "https://www.googleapis.com/books/v1/volumes/m5vIVN7LjtgC";
-		$.ajax({
-			url: openLibAPI,
-			crossDomain: true,
-			datatype: 'json',
-			success: function(data){
+		$.get(openLibAPI, function(data){
 				var book = data.volumeInfo;
 				console.log(book.title);
 				// fill into inner HTML
-
-			}
 		})	
 	})
 
